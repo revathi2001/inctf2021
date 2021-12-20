@@ -15,7 +15,8 @@ Challenge Author: [Revathi](https://twitter.com/Revathi01740772)
 - Finally ascii values of our input string are compared with output values returned after xoring with ``f`` function. Writing the python code for the above process, we get the flag.
 
 ### Exploit
-``def f(n):
+```
+def f(n):
 	if n == 0:
 		return 0
 	if n == 1 or n == 2:
@@ -40,7 +41,8 @@ for i in l:
 for i in range(len(l_new)):
 	x=l_new[i]^f(i)
 	y=chr(x)
-	print(y,end="")``
+	print(y,end="")
+```
 
 ### Flag
 ```inctf{g00d_g01ng_y0u_g0t_the_f1ag}```
